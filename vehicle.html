@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motorhome Lab - Veículo</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GTM WEB: substitua depois pelo seu snippet -->
+  <!--
+  <script>
+    // GTM HEAD SNIPPET
+  </script>
+  -->
+</head>
+<body data-page="veiculo">
+  <!-- GTM WEB NOSCRIPT -->
+  <!--
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  -->
+
+  <header class="header">
+    <div class="container">
+      <h1>Motorhome Lab</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="veiculo.html">Veículo</a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="vehicle-layout">
+      <div class="vehicle-image">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+          alt="Motorhome Aurora"
+        />
+      </div>
+
+      <div class="vehicle-info">
+        <span class="badge">Detalhes do veículo</span>
+        <h2 id="vehicle-name">Motorhome Aurora</h2>
+        <p class="price">R$ 650 / diária</p>
+
+        <p>
+          Um motorhome confortável para explorar estradas, praias e montanhas.
+          Este produto foi criado para praticar eventos de ecommerce no GA4.
+        </p>
+
+        <ul class="specs">
+          <li><strong>ID do veículo:</strong> mh001</li>
+          <li><strong>Categoria:</strong> Motorhome</li>
+          <li><strong>Localização:</strong> Curitiba</li>
+          <li><strong>Capacidade:</strong> 4 pessoas</li>
+          <li><strong>Proprietário:</strong> Carlos Mendes</li>
+          <li><strong>ID Proprietário:</strong> prop001</li>
+        </ul>
+
+        <div class="actions">
+          <button class="btn" id="addToCartBtn">Adicionar à reserva</button>
+          <a class="btn secondary" id="beginCheckoutBtn" href="checkout.html">
+            Ir para checkout
+          </a>
+        </div>
+
+        <p class="note">
+          Nesta página vamos disparar <strong>view_item</strong> ao carregar,
+          <strong>add_to_cart</strong> no clique do botão e
+          <strong>begin_checkout</strong> ao seguir para o checkout.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Laboratório de funil de ecommerce com GTM e GA4.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

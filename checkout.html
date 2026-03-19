@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motorhome Lab - Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GTM WEB: substitua depois pelo seu snippet -->
+  <!--
+  <script>
+    // GTM HEAD SNIPPET
+  </script>
+  -->
+</head>
+<body data-page="checkout">
+  <!-- GTM WEB NOSCRIPT -->
+  <!--
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  -->
+
+  <header class="header">
+    <div class="container">
+      <h1>Motorhome Lab</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="veiculo.html">Veículo</a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="checkout-box">
+      <span class="badge">Checkout simulado</span>
+      <h2>Resumo da reserva</h2>
+
+      <div class="summary-card">
+        <h3>Motorhome Aurora</h3>
+        <ul class="specs">
+          <li><strong>ID do item:</strong> mh001</li>
+          <li><strong>Categoria:</strong> Motorhome</li>
+          <li><strong>Localização:</strong> Curitiba</li>
+          <li><strong>Capacidade:</strong> 4 pessoas</li>
+          <li><strong>Proprietário:</strong> Carlos Mendes</li>
+          <li><strong>Valor:</strong> R$ 650</li>
+        </ul>
+      </div>
+
+      <div class="checkout-total">
+        <p><strong>Total da reserva:</strong> R$ 650</p>
+      </div>
+
+      <button class="btn" id="purchaseBtn">Finalizar reserva</button>
+
+      <div id="purchaseMessage" class="success-message hidden">
+        Reserva finalizada com sucesso. Evento <strong>purchase</strong> disparado.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Use esta página para testar purchase no GTM e no GA4.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
